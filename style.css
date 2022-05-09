@@ -12,12 +12,57 @@ body {
   box-shadow: 6px 6px 20px rgb(0, 0, 0, 0.1);
 }
 
-.main-description {
-  background: greenyellow;
-  margin: 20px;
-  padding: 40px;
-}
-
 p {
   color: rgb(133, 132, 132);
+}
+
+aside {
+  width: 370px;
+  background: #1e2939;
+}
+
+.photo {
+  margin-top: 25px;
+}
+
+.header-secondary {
+  color: #ffffff;
+}
+
+.contact-links {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.list-secondary {
+  color: #fb6d3a;
+  margin-left: 0px;
+  padding-left: 0px;
+  list-style-position: inside;
+}
+
+.font-secondary-item {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.contact-block {
+  margin-top: 51px;
+  margin-left: 40px;
+}
+
+.tech-skils-block {
+  margin-top: 47px;
+  margin-left: 40px;
+}
+
+.soft-skils-block {
+  margin-top: 44px;
+  margin-left: 40px;
 }
