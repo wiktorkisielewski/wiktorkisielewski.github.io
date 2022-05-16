@@ -52,6 +52,19 @@ aside {
   line-height: 24px;
 }
 
+.tech-list {
+  color: #ff885d;
+  margin-left: 0px;
+  padding-left: 10px;
+  list-style-position: inside;
+}
+
+.tech-item {
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 20px
+}
+
 .contact-block {
   margin-top: 51px;
   margin-left: 40px;
