@@ -3,6 +3,10 @@ body {
   background: #f5f7fa;
 }
 
+h1.format-icon:before {
+content: none;
+}
+
 .wrapper {
   display: flex;
   width: 1200px;
@@ -81,11 +85,11 @@ aside {
 }
 
 main {
-  padding: 102px 88px 102px 88px;
+  padding: 102px 88px;
 }
 
 .main-description {
-  width: 400px;
+  width: 550px;
 }
 
 h1 {
