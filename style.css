@@ -26,7 +26,9 @@ aside {
 }
 
 .photo {
-  margin-top: 25px;
+  display: block;
+  margin: 25px auto 0;
+  border-radius: 8px;
 }
 
 .header-secondary {
