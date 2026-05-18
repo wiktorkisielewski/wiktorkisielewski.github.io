@@ -29,8 +29,14 @@ aside {
 
 .photo {
   display: block;
-  margin: 28px auto 0;
-  border-radius: 8px;
+  width: 180px;
+  height: 180px;
+  margin: 40px auto 8px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 3px solid #fb6d3a;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
 }
 
 .header-secondary {
@@ -141,6 +147,23 @@ h2 {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+}
+
+.job-headline {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 13px;
+  line-height: 19px;
+  color: #595959;
+  margin: 4px 0 2px;
+}
+
+.job-desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #595959;
+  margin: 6px 0 8px;
 }
 
 .highlight {
