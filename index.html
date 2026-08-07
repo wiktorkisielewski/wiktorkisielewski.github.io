@@ -1,173 +1,137 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/full-moon-face_1f31d.png" type="image/x-icon">
-    <title>W.Kisielewski</title>
+    <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/full-moon-face_1f31d.png" type="image/x-icon" />
+    <title>Wiktor Kisielewski — SRE / DevOps</title>
     <link href="style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <div class="wrapper">
-      <aside>
-        <img class="photo" src="me.jpeg" alt="Wiktor Kisielewski" />
+    <div class="page">
+      <header class="header">
+        <h1>Wiktor Kisielewski</h1>
+        <p class="tagline">Site Reliability / DevOps Engineer </p>
+        <p class="contact">
+          <span id="phone">+48 *** *** *** <button class="reveal-button" onclick="revealPhone()">show</button></span> ·
+          <a href="mailto:wiktor@kisielew.ski">wiktor@kisielew.ski</a> ·
+          <a href="https://github.com/wiktorkisielewski"><svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg> github.com/wiktorkisielewski</a> ·
+          <a href="https://www.linkedin.com/in/wiktor-kisielewski-4a6817160"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"/></svg> LinkedIn</a>
+        </p>
+        <p class="summary">
+          DevOps/SRE engineer with 5+ years across fintech and trading platforms: infrastructure, CI/CD, and
+          GitOps keeping delivery boring. I build and tune observability pipelines at scale,
+          hunting down weaknesses and bottlenecks anywhere with telemetry collection and processing.
+          Outside work I build and maintain automated trading systems.
+        </p>
+      </header>
 
-        <div class="contact-block">
-          <h2 class="header-secondary">Contact me:</h2>
-          <p class="contact-links">
-            <span class="bold">tel:</span>
-            <a class="contact-links" href="tel:+48 669644427">+48 669644427</a>
-            <br />
-            <span class="bold">mail:</span>
-            <a class="contact-links" href="mailto: wiktor.kisielewski@protonmail.com">wiktor.kisielewski@protonmail.com</a>
-          </p>
-        </div>
+      <section>
+        <h2>Experience</h2>
 
-        <div class="tech-skils-block">
-          <h2 class="header-secondary">Skills/Technologies</h2>
-          <ul class="list-secondary">
-            <li><span class="font-secondary-item">Cloud:</span> <span class="tech-item">AWS, GCP, Azure</span></li>
-            <li><span class="font-secondary-item">Orchestration:</span> <span class="tech-item">Kubernetes (Vanilla, AKS, GKE, EKS, OKD)</span></li>
-            <li><span class="font-secondary-item">Containerization:</span> <span class="tech-item">Docker</span></li>
-            <li><span class="font-secondary-item">IaC:</span> <span class="tech-item">Terraform, Ansible</span></li>
-            <li><span class="font-secondary-item">GitOps:</span> <span class="tech-item">ArgoCD</span></li>
-            <li><span class="font-secondary-item">Automation:</span> <span class="tech-item">Jenkins, Helm, Azure & GitHub Pipelines, GitLab Pipelines, Ansible</span></li>
-            <li><span class="font-secondary-item">Observability:</span> <span class="tech-item">Prometheus, Grafana, Alertmanager, Thanos, VictoriaMetrics, Loki, Tempo, OpenTelemetry, OTel Collector, Vector, PromQL/LogQL, ELK (Elasticsearch, Logstash, Kibana), SensuGo, CloudWatch, Nagios</span></li>
-            <li><span class="font-secondary-item">Databases:</span> <span class="tech-item">PostgreSQL, MySQL, ElasticSearch, OpenSearch, InfluxDB, Graphite</span></li>
-            <li><span class="font-secondary-item">Secrets:</span> <span class="tech-item">HashiCorp Vault</span></li>
-            <li><span class="font-secondary-item">Scripting:</span> <span class="tech-item">Bash, Python, PowerShell</span></li>
-            <li><span class="font-secondary-item">Coding:</span> <span class="tech-item">Python, HTML/CSS/JS, C#, Go (mother tongue: YAML)</span></li>
-            <li><span class="font-secondary-item">Other:</span> <span class="tech-item">Linux, Git, CI/CD, Blockchain, Jira, Google Workspace</span></li>
+        <article class="job">
+          <div class="job-header">
+            <h3>Site Reliability Engineer · <span class="company">XTB</span></h3>
+            <span class="dates">Apr 2025 – present</span>
+          </div>
+          <ul>
+            <li>Introduced <b>wide events</b> as the observability standard, defining and standardizing telemetry metadata across <b>almost 1000 microservices</b> on-prem, in cloud, and on bare metal.</li>
+            <li>Consolidated fragmented monitoring into a single metrics/logs/traces platform ingesting <b>terabytes of logs daily</b>.</li>
+            <li>Own incident management and on-call for trading services: SLOs on critical paths, blameless postmortems, and automated runbooks driving MTTR down.</li>
+            <li>Built an <b>LLM-based log scanner</b> catching sensitive-data leaks, plus AI that surfaces incidents from team chat before anyone formally raises them.</li>
+            <li>Shipped an interactive per-team report of alerts, incidents, metrics coverage, and log usage.</li>
           </ul>
-        </div>
+        </article>
 
-        <div class="soft-skils-block">
-          <h2 class="header-secondary">Soft skills</h2>
-          <ul class="list-secondary">
-            <li><span class="font-secondary-item">Agile workflow</span></li>
-            <li><span class="font-secondary-item">Proactive</span></li>
-            <li><span class="font-secondary-item">"DevOps ideology"</span></li>
-            <li><span class="font-secondary-item">Easy-going</span></li>
+        <article class="job">
+          <div class="job-header">
+            <h3>DevOps Engineer · <span class="company">Oper Credits</span></h3>
+            <span class="dates">Sep 2023 – Apr 2025</span>
+          </div>
+          <ul>
+            <li>Sole DevOps at a fintech lending startup: Kubernetes infra, GitOps, Terraform/Ansible provisioning, central monitoring.</li>
+            <li>Led the AWS→GCP migration, cutting infrastructure costs by <b>~40%</b> (FinOps).</li>
+            <li>Helped the company pass <b>ISO 27001</b> certification.</li>
+            <li>Moved releases to git tags and handed routine QA/TEST deploys to the QA team.</li>
+            <li>Ran chaos engineering experiments to verify the platform survives infrastructure failures.</li>
           </ul>
-        </div>
-        <div class="soft-skils-block">
-          <h2 class="header-secondary">Languages</h2>
-          <ul class="list-secondary">
-            <li><span class="font-secondary-item">English (C1)</span></li>
-            <li><span class="font-secondary-item">Polish (native)</span></li>
-            <li><span class="font-secondary-item">Italian (in progress/basic)</span></li>
+        </article>
+
+        <article class="job">
+          <div class="job-header">
+            <h3>DevOps / AI Infrastructure Engineer · <span class="company">SentiOne</span></h3>
+            <span class="dates">Nov 2022 – Sep 2023</span>
+          </div>
+          <ul>
+            <li>Introduced ArgoCD + Terraform GitOps — customer setups on their own infrastructure went from <b>days to minutes</b>.</li>
+            <li>Built a self-healing system that reduced on-call alerts.</li>
+            <li>Ran hybrid on-prem/cloud Kubernetes (vanilla, OKD, Rancher, k3s) and automated CI/CD and provisioning for an AI/NLP platform.</li>
           </ul>
-        </div>
-      </aside>
-      <main>
-        <div class="main-description">
-          <h1>Wiktor Kisielewski</h1>
-          <p class="description">I'm a self-taught DevOps engineer who picked up a strong SRE streak along the way. I spend most of my time on infrastructure, CI/CD, and observability, and I lean on GitOps to keep delivery boring. Outside work I build trading systems and fly a drone.</p>        </div>
-        <div class="projects">
-          <h2>Links:</h2>
-          <ul class="list-primary">
-            <li><a class="list-primary-item" href="https://github.com/wiktorkisielewski">github.com/wiktorkisielewski</a></li>
-            <li><a class="list-primary-item" href="https://www.linkedin.com/in/wiktor-kisielewski-4a6817160">LinkedIn</a></li>
+        </article>
+
+        <article class="job">
+          <div class="job-header">
+            <h3>Junior Cloud Engineer · <span class="company">Allegro Pay</span></h3>
+            <span class="dates">Aug 2022 – Nov 2022</span>
+          </div>
+          <ul>
+            <li>Built self-service Azure pipelines so non-DevOps folks could run routine tasks themselves.</li>
+            <li>Built cross-region Azure DNS / private-link sync (Azure Pipelines, PowerShell).</li>
           </ul>
-        </div>
+        </article>
 
-        <div>
-          <h2>Experience</h2>
-
-          <h3 class="job-name">
-            SRE / Site Reliability Engineer @ <span class="highlight">XTB</span>
-          </h3>
-          <p class="job-date">April 2025 - Present | Gdańsk</p>
-          <p class="job-desc">I work on reliability for XTB's trading services and own the observability stack. I merged a bunch of fragmented monitoring into one metrics/logs/traces setup spanning on-prem Kubernetes, cloud, and bare-metal. I also run incident management and on-call — triage tooling, blameless postmortems, SLOs on the critical paths, and automated runbooks to bring MTTR down.</p>
-          <p class="job-date"><b>Notable bits:</b></p>
-          <ul class="job-list">
-            <li>Built an LLM-based log scanner that catches sensitive-data leaks across our services</li>
-            <li>Used AI to surface incidents from team chat before anyone formally raised them</li>
-            <li>Built an interactive report on alerts, incidents, metrics coverage, and log usage by team</li>
+        <article class="job">
+          <div class="job-header">
+            <h3>Junior DevOps Engineer · <span class="company">SentiOne</span></h3>
+            <span class="dates">Jul 2021 – Jul 2022</span>
+          </div>
+          <ul>
+            <li>Unified monitoring and standardized bare-metal Kubernetes provisioning with Ansible.</li>
+            <li>Ran a multi-TB Elasticsearch cluster; 24/7 on-call across client clouds and data centers.</li>
           </ul>
+        </article>
 
-          <h3 class="job-name">
-            DevOps @ <span class="highlight">Oper Credits</span>
-          </h3>
-          <p class="job-date">September 2023 - Present | Gdańsk</p>
-          <p class="job-desc">Sole DevOps at a fintech lending startup. I run the (mostly Kubernetes) infra, set up GitOps and Terraform/Ansible provisioning, built central monitoring, and led the AWS&rarr;GCP migration to cut costs. Also poked at LLM integrations and an internal ChatOps tool.</p>
-          <p class="job-date"><b>Notable bits:</b></p>
-          <ul class="job-list">
-            <li>Helped the company pass ISO 27001</li>
-            <li>Moved us to git-tag releases and handed routine QA/TEST deploys to the QA team</li>
-          </ul>
+        <article class="job">
+          <div class="job-header">
+            <h3>IT/DC Operator · <span class="company">Wirtualna Polska</span></h3>
+            <span class="dates">Feb 2020 – Jun 2020</span>
+          </div>
+          <p class="one-liner">Monitoring and hardware fixes across thousands of racks in WP's data centers.</p>
+        </article>
+      </section>
 
+      <section>
+        <h2>Skills</h2>
+        <ul class="skills">
+          <li><b>Cloud:</b> AWS, GCP, Azure</li>
+          <li><b>Kubernetes:</b> managed and bare-metal · Docker, Helm, ArgoCD</li>
+          <li><b>IaC / CI/CD:</b> Terraform, Ansible, Jenkins, GitHub/GitLab/Azure Pipelines</li>
+          <li><b>Observability:</b> Prometheus, Grafana, Thanos, VictoriaMetrics, Loki, Tempo, OpenTelemetry, Vector, ELK</li>
+          <li><b>Databases:</b> PostgreSQL, MySQL, Elasticsearch/OpenSearch, InfluxDB</li>
+          <li><b>Programming:</b> Python for most things, solid Bash — and anything else with AI assistance</li>
+          <li><b>AI / LLM:</b> building agents, MCP, LLM-based tooling in production (log scanning, incident detection), AI-assisted engineering</li>
+          <li><b>Security:</b> HashiCorp Vault, secrets management, ISO 27001, DevSecOps</li>
+          <li><b>Messaging &amp; caching:</b> Kafka, RabbitMQ, Redis</li>
+          <li><b>Other:</b> Linux, Nginx, Git, Chaos engineering</li>
+        </ul>
+      </section>
 
-
-          <h3 class="job-name">
-            DevOps / AI Infrastructure Engineer @ <span class="highlight">SentiOne</span>
-          </h3>
-          <p class="job-date">November 2022 - September 2023 | Gdańsk</p>
-          <p class="job-desc">I was part of the team keeping an AI/NLP platform's delivery fast and stable. I automated CI/CD and provisioning (Ansible, Terraform) and ran hybrid on-prem/cloud infra on Kubernetes (vanilla, OKD, Rancher, k3s), plus monitoring, access, and compliance bits.</p>
-          <p class="job-date"><b>Notable bits:</b></p>
-          <ul class="job-list">
-            <li>Built a self-healing system that took a real chunk out of on-call</li>
-            <li>Introduced ArgoCD + Terraform GitOps — full environments in minutes instead of days</li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="job-name">
-            Junior Cloud Engineer @ <span class="highlight">Allegro Pay</span>
-          </h3>
-          <p class="job-date">August 2022 - November 2022 | Warsaw</p>
-          <p class="job-desc">I helped keep Allegro Pay's Azure environments fast and cheap. Built CI/CD, monitoring-as-code (alerts, dashboards), and wired up on-prem to Azure.</p>
-          <p class="job-date"><b>Notable bits:</b></p>
-          <ul class="job-list">
-            <li>Built self-service pipelines so non-DevOps folks could run routine tasks themselves</li>
-            <li>Built cross-region Azure DNS / private-link sync (Azure Pipelines, PowerShell)</li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="job-name">
-            Junior DevOps @ <span class="highlight">SentiOne</span>
-          </h3>
-          <p class="job-date">July 2021 - July 2022 | Gdańsk</p>
-          <p class="job-desc">I helped with hybrid deployments across client clouds and data centers, kept staging stable, wrote monitoring-as-code, ran 24/7 on-call, and looked after core tooling and databases.</p>
-          <p class="job-date"><b>Notable bits:</b></p>
-          <ul class="job-list">
-            <li>Unified the monitoring setup and standardized bare-metal Kubernetes provisioning with Ansible</li>
-            <li>Ran a multi-TB Elasticsearch cluster</li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="job-name">
-            IT/DC Operator @ <span class="highlight">Wirtualna Polska</span>
-          </h3>
-          <p class="job-date">February 2020 - June 2020 | Gdańsk</p>
-          <p class="job-desc">On-call shifts in WP's data centers — monitoring and hardware fixes across thousands of racks.</p>
-        </div>
-
-        <div>
-          <h2>Education</h2>
-          <h3 class="job-name">
-            <span class="highlight">CODE:ME - Gdansk</span>
-          </h3>
-          <h4>Front-End Course</h4>
-          <p class="job-date">01.2018 - 06.2019 | Gdańsk</p>
-          <p class="list-primary-item">
-            Nine-month course covering HTML/CSS through JavaScript and React, plus SEO basics.
-          </p>
-        </div>
-
-        <div>
-          <h2>Open source</h2>
-          <ul class="list-primary">
-            <li><a class="list-primary-item" href="https://github.com/rsheftel/pandas_market_calendars/pull/436">pandas_market_calendars #436</a></li>
-          </ul>
-        </div>
-      </main>
+      <section class="footer-sections">
+        <p><b>Languages:</b> Polish (native) · English (C1) · Italian (basic)</p>
+        <p><b>Opensource contributions:</b> <a href="https://github.com/rsheftel/pandas_market_calendars/pull/436">pandas_market_calendars #436</a></p>
+      </section>
     </div>
+    <script>
+      function revealPhone() {
+        const number = atob("KzQ4IDY2OSA2NDQgNDI3");
+        const link = document.createElement("a");
+        link.href = "tel:" + number.replaceAll(" ", "");
+        link.textContent = number;
+        document.getElementById("phone").replaceWith(link);
+      }
+    </script>
   </body>
 </html>

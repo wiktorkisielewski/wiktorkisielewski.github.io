@@ -1,192 +1,185 @@
+:root {
+  --text: #2b2b2b;
+  --muted: #6b6b6b;
+  --accent: #2b6cb0;
+  --line: #e6e6e6;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background: #f5f7fa;
+  color: var(--text);
+  margin: 0;
 }
 
-h1.format-icon:before {
-content: none;
-}
-
-.wrapper {
-  display: flex;
-  width: 1200px;
-  justify-content: center;
+.page {
+  max-width: 820px;
   margin: 0 auto;
+  padding: 48px 56px;
   background: #ffffff;
-  box-shadow: 6px 6px 20px rgb(0, 0, 0, 0.1);
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
 
-p {
-  color: rgb(133, 132, 132);
-}
-
-aside {
-  width: 370px;
-  padding: 0 28px;
-  box-sizing: border-box;
-  background: #1e2939;
-}
-
-.photo {
-  display: block;
-  width: 180px;
-  height: 180px;
-  margin: 40px auto 8px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center top;
-  border: 3px solid #fb6d3a;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
-}
-
-.header-secondary {
-  color: #ffffff;
-}
-
-.contact-links {
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 24px;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-.list-secondary {
-  color: #fb6d3a;
-  margin-left: 0px;
-  padding-left: 0px;
-  list-style-position: inside;
-}
-
-.font-secondary-item {
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 24px;
-}
-
-.tech-list {
-  color: #ff885d;
-  margin-left: 0px;
-  padding-left: 10px;
-  list-style-position: inside;
-}
-
-.tech-item {
-  color: #ffffff;
-  font-size: 12px;
-  line-height: 20px
-}
-
-.contact-block {
-  margin-top: 40px;
-}
-
-.tech-skils-block {
-  margin-top: 36px;
-}
-
-.soft-skils-block {
-  margin-top: 32px;
-}
-
-main {
-  padding: 56px 56px;
-  box-sizing: border-box;
-}
-
-.main-description {
-  width: 550px;
-}
+/* Header */
 
 h1 {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 50px;
+  font-size: 34px;
+  margin: 0;
 }
 
-.description {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: #595959;
-  margin-bottom: 40px;
+.tagline {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--accent);
+  margin: 4px 0 8px;
 }
 
-.projects {
-  width: 485px;
-  margin-bottom: 51px;
+.contact {
+  font-size: 13px;
+  margin: 0 0 16px;
 }
 
-.list-primary {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
-  padding-left: 0px;
-  list-style-position: inside;
-}
-
-.list-primary-item {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: #595959;
+.contact a {
+  color: var(--muted);
   text-decoration: none;
 }
 
-h2 {
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 27px;
-  margin-bottom: 12px;
-  margin-top: 42px;
+.contact a:hover {
+  color: var(--accent);
 }
 
-.job-name {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
+.reveal-button {
+  font-family: inherit;
+  font-size: 11px;
+  color: var(--accent);
+  background: none;
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+  padding: 1px 6px;
+  cursor: pointer;
 }
 
-.job-headline {
-  font-weight: 400;
-  font-style: italic;
-  font-size: 13px;
-  line-height: 19px;
-  color: #595959;
-  margin: 4px 0 2px;
+.reveal-button:hover {
+  color: #ffffff;
+  background: var(--accent);
 }
 
-.job-desc {
-  font-weight: 400;
+.icon {
+  width: 13px;
+  height: 13px;
+  fill: currentColor;
+  vertical-align: -2px;
+}
+
+.summary {
   font-size: 14px;
   line-height: 22px;
-  color: #595959;
-  margin: 6px 0 8px;
+  color: var(--muted);
+  margin: 0;
 }
 
-.highlight {
-  color: #fb6d3a;
+/* Sections */
+
+h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 4px;
+  margin: 32px 0 16px;
 }
 
-.job-date {
-  font-weight: 400;
+/* Jobs */
+
+.job {
+  margin-bottom: 18px;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.job h3 {
+  font-size: 15px;
+  margin: 0;
+}
+
+.company {
+  color: var(--accent);
+}
+
+.dates {
   font-size: 12px;
-  line-height: 15px;
+  color: var(--muted);
+  white-space: nowrap;
 }
 
-.job-list {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: #595959;
-  padding-left: 0px;
-  list-style-position: inside;
+.job ul {
+  margin: 6px 0 0;
+  padding-left: 18px;
 }
 
-h4 {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
+.job li {
+  font-size: 13.5px;
+  line-height: 21px;
+  color: var(--text);
+  margin-bottom: 3px;
+}
+
+.one-liner {
+  font-size: 13.5px;
+  line-height: 21px;
+  color: var(--muted);
+  margin: 4px 0 0;
+}
+
+/* Skills and footer */
+
+.skills {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.skills li {
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.footer-sections p {
+  font-size: 13px;
+  line-height: 22px;
+  margin: 6px 0;
+}
+
+.footer-sections a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* Print */
+
+@media print {
+  body {
+    background: #ffffff;
+  }
+
+  .page {
+    box-shadow: none;
+    max-width: none;
+    padding: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 24px 20px;
+  }
+
+  .job-header {
+    flex-direction: column;
+    gap: 0;
+  }
 }
