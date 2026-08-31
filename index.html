@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/full-moon-face_1f31d.png" type="image/x-icon" />
-    <title>Wiktor Kisielewski — SRE / DevOps</title>
+    <title>Wiktor Kisielewski — SRE / DevOps / Platform engineer</title>
     <link href="style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +14,7 @@
     <div class="page">
       <header class="header">
         <h1>Wiktor Kisielewski</h1>
-        <p class="tagline">Site Reliability / DevOps Engineer </p>
+        <p class="tagline">Platform / Site Reliability / DevOps Engineer </p>
         <p class="contact">
           <span id="phone">+48 *** *** *** <button class="reveal-button" onclick="revealPhone()">show</button></span> ·
           <a href="mailto:wiktor@kisielew.ski">wiktor@kisielew.ski</a> ·
@@ -22,10 +22,12 @@
           <a href="https://www.linkedin.com/in/wiktor-kisielewski-4a6817160"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"/></svg> LinkedIn</a>
         </p>
         <p class="summary">
-          DevOps/SRE engineer with 5+ years across fintech and trading platforms: infrastructure, CI/CD, and
-          GitOps keeping delivery boring. I build and tune observability pipelines at scale,
-          hunting down weaknesses and bottlenecks anywhere with telemetry collection and processing.
-          Outside work I build and maintain automated trading systems.
+          Over six years of keeping money-moving systems up: lending platforms, a broker's trading stack,
+          and an AI product in between. The work splits between building the platform
+          teams ship on — Kubernetes/Linux, Terraform, GitOps, self-service tooling — and being the first to
+          know when it misbehaves: SLOs, on-call, terabytes of observability signals data a day from about a hundrets
+          microservices, disaster recovery that's been tested rather than written down. A growing part
+          of it is LLM tooling for the operational side. Outside work I build automated trading systems.
         </p>
       </header>
 
@@ -38,11 +40,15 @@
             <span class="dates">Apr 2025 – present</span>
           </div>
           <ul>
-            <li>Introduced <b>wide events</b> as the observability standard, defining and standardizing telemetry metadata across <b>almost 1000 microservices</b> on-prem, in cloud, and on bare metal.</li>
-            <li>Consolidated fragmented monitoring into a single metrics/logs/traces platform ingesting <b>terabytes of logs daily</b>.</li>
-            <li>Own incident management and on-call for trading services: SLOs on critical paths, blameless postmortems, and automated runbooks driving MTTR down.</li>
-            <li>Built an <b>LLM-based log scanner</b> catching sensitive-data leaks, plus AI that surfaces incidents from team chat before anyone formally raises them.</li>
-            <li>Shipped an interactive per-team report of alerts, incidents, metrics coverage, and log usage.</li>
+            <li>Built the LLM tooling used in operations: a <b>RAG system</b> over postmortems and internal documentation that assists incident response, a scanner catching sensitive data in logs, and detection of incidents from team chat before they are formally reported.</li>
+            <li>Established <b>wide events</b> as the observability standard and standardized telemetry metadata across <b>almost 1000 microservices</b> running on-prem, in cloud and on bare metal.</li>
+            <li>Consolidated separate monitoring setups into a single metrics, logs and traces platform ingesting <b>terabytes of signals data daily</b>.</li>
+            <li>Own incident management and on-call for trading services: SLOs on business-critical paths, blameless postmortems, automated runbooks driving MTTR down.</li>
+            <li>Rolled out <b>JVM observability</b> across Java services with OpenTelemetry auto-instrumentation, so teams get traces and metrics without touching their code.</li>
+            <li>Extended monitoring to <b>databases</b>: PostgreSQL, Elasticsearch and Kafka consumer lag, covering slow queries and replication health.</li>
+            <li><b>Self-service alerting</b> for developer and QA teams: own alert definitions and thresholds, without a platform-team ticket.</li>
+            <li>Disaster recovery planning and failover drills for trading infrastructure.</li>
+            <li>Interactive per-team report of alerts, incidents, metric coverage and log usage.</li>
           </ul>
         </article>
 
@@ -52,11 +58,12 @@
             <span class="dates">Sep 2023 – Apr 2025</span>
           </div>
           <ul>
-            <li>Sole DevOps at a fintech lending startup: Kubernetes infra, GitOps, Terraform/Ansible provisioning, central monitoring.</li>
-            <li>Led the AWS→GCP migration, cutting infrastructure costs by <b>~40%</b> (FinOps).</li>
-            <li>Helped the company pass <b>ISO 27001</b> certification.</li>
+            <li>Sole DevOps at a fintech lending startup: Kubernetes, GitOps, Terraform and Ansible provisioning, central monitoring.</li>
+            <li>Production infrastructure on AWS and GCP; led the AWS→GCP migration, cutting infrastructure spend by <b>~40%</b> (FinOps).</li>
+            <li>Full ownership of <b>disaster recovery</b>: designed the process and executed complete production restores several times.</li>
+            <li>Delivered the infrastructure side of <b>ISO 27001</b> certification.</li>
             <li>Moved releases to git tags and handed routine QA/TEST deploys to the QA team.</li>
-            <li>Ran chaos engineering experiments to verify the platform survives infrastructure failures.</li>
+            <li>Chaos engineering experiments validating that the platform survives infrastructure failures.</li>
           </ul>
         </article>
 
@@ -66,9 +73,9 @@
             <span class="dates">Nov 2022 – Sep 2023</span>
           </div>
           <ul>
-            <li>Introduced ArgoCD + Terraform GitOps — customer setups on their own infrastructure went from <b>days to minutes</b>.</li>
-            <li>Built a self-healing system that reduced on-call alerts.</li>
-            <li>Ran hybrid on-prem/cloud Kubernetes (vanilla, OKD, Rancher, k3s) and automated CI/CD and provisioning for an AI/NLP platform.</li>
+            <li>ArgoCD and Terraform for <b>self-service provisioning</b>: customer installs on their own infrastructure went from <b>days to minutes</b>.</li>
+            <li>Self-healing automation for recurring failures, reducing out-of-hours alerts.</li>
+            <li>Hybrid on-prem/cloud Kubernetes (vanilla, OKD, Rancher, k3s) for an <b>AI/NLP platform</b>: GPU nodes, model serving, and the data pipelines behind conversational AI.</li>
           </ul>
         </article>
 
@@ -78,8 +85,8 @@
             <span class="dates">Aug 2022 – Nov 2022</span>
           </div>
           <ul>
-            <li>Built self-service Azure pipelines so non-DevOps folks could run routine tasks themselves.</li>
-            <li>Built cross-region Azure DNS / private-link sync (Azure Pipelines, PowerShell).</li>
+            <li>Self-service Azure pipelines enabling non-DevOps teams to run routine tasks independently.</li>
+            <li>Cross-region Azure DNS and private-link sync (Azure Pipelines, PowerShell).</li>
           </ul>
         </article>
 
@@ -90,7 +97,7 @@
           </div>
           <ul>
             <li>Unified monitoring and standardized bare-metal Kubernetes provisioning with Ansible.</li>
-            <li>Ran a multi-TB Elasticsearch cluster; 24/7 on-call across client clouds and data centers.</li>
+            <li>Multi-TB Elasticsearch cluster and the surrounding Java services; 24/7 on-call across client clouds and data centers.</li>
           </ul>
         </article>
 
@@ -106,16 +113,18 @@
       <section>
         <h2>Skills</h2>
         <ul class="skills">
-          <li><b>Cloud:</b> AWS, GCP, Azure</li>
-          <li><b>Kubernetes:</b> managed and bare-metal · Docker, Helm, ArgoCD</li>
+          <li><b>Cloud:</b> AWS (EKS, EC2, S3/EBS/EFS, IAM, cost management), GCP (GKE), Azure</li>
+          <li><b>Kubernetes:</b> managed and bare-metal · Docker, Helm, ArgoCD, Rancher, OKD, k3s</li>
           <li><b>IaC / CI/CD:</b> Terraform, Ansible, Jenkins, GitHub/GitLab/Azure Pipelines</li>
-          <li><b>Observability:</b> Prometheus, Grafana, Thanos, VictoriaMetrics, Loki, Tempo, OpenTelemetry, Vector, ELK</li>
-          <li><b>Databases:</b> PostgreSQL, MySQL, Elasticsearch/OpenSearch, InfluxDB</li>
+          <li><b>Observability:</b> Prometheus, Grafana, Thanos, VictoriaMetrics, Loki, Tempo, OpenTelemetry, Vector, ELK · SLOs, error budgets, incident management</li>
+          <li><b>JVM:</b> OpenTelemetry agent and JMX metrics, GC and heap analysis, thread and connection pools</li>
+          <li><b>Databases:</b> PostgreSQL, MySQL, Elasticsearch/OpenSearch, InfluxDB · monitoring and performance troubleshooting</li>
+          <li><b>Networking:</b> TCP/IP, DNS, load balancing, VPN</li>
           <li><b>Programming:</b> Python for most things, solid Bash — and anything else with AI assistance</li>
-          <li><b>AI / LLM:</b> building agents, MCP, LLM-based tooling in production (log scanning, incident detection), AI-assisted engineering</li>
+          <li><b>AI / LLM:</b> RAG, agents, MCP, LLM tooling running in production · infrastructure for AI/NLP platforms · AI-assisted engineering</li>
           <li><b>Security:</b> HashiCorp Vault, secrets management, ISO 27001, DevSecOps</li>
           <li><b>Messaging &amp; caching:</b> Kafka, RabbitMQ, Redis</li>
-          <li><b>Other:</b> Linux, Nginx, Git, Chaos engineering</li>
+          <li><b>Other:</b> Linux, Nginx, Git, chaos engineering, disaster recovery, FinOps</li>
         </ul>
       </section>
 
