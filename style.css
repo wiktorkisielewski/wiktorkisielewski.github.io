@@ -116,6 +116,13 @@ h2 {
   font-size: 12px;
   color: var(--muted);
   white-space: nowrap;
+  text-align: right;
+}
+
+.duration {
+  display: block;
+  margin-top: 3px;
+  font-size: 11px;
 }
 
 .job ul {
@@ -182,5 +189,9 @@ h2 {
   .job-header {
     flex-direction: column;
     gap: 0;
+  }
+
+  .dates {
+    text-align: left;
   }
 }

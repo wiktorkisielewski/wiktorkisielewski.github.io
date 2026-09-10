@@ -14,7 +14,7 @@
     <div class="page">
       <header class="header">
         <h1>Wiktor Kisielewski</h1>
-        <p class="tagline">Platform / Site Reliability / DevOps Engineer </p>
+        <p class="tagline">Site Reliability / DevOps / Platform Engineer</p>
         <p class="contact">
           <span id="phone">+48 *** *** *** <button class="reveal-button" onclick="revealPhone()">show</button></span> ·
           <a href="mailto:wiktor@kisielew.ski">wiktor@kisielew.ski</a> ·
@@ -22,12 +22,11 @@
           <a href="https://www.linkedin.com/in/wiktor-kisielewski-4a6817160"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"/></svg> LinkedIn</a>
         </p>
         <p class="summary">
-          Over six years of keeping money-moving systems up: lending platforms, a broker's trading stack,
-          and an AI product in between. The work splits between building the platform
-          teams ship on — Kubernetes/Linux, Terraform, GitOps, self-service tooling — and being the first to
-          know when it misbehaves: SLOs, on-call, terabytes of observability signals data a day from about a hundrets
-          microservices, disaster recovery that's been tested rather than written down. A growing part
-          of it is LLM tooling for the operational side. Outside work I build automated trading systems.
+          I build and run infrastructure for trading, mortgage and AI systems. I've worked as the sole
+          DevOps engineer at a startup and as part of an SRE team, with responsibility for Kubernetes,
+          cloud migrations, monitoring and incident response. I also write tools that make day-to-day
+          operations easier, including LLM tools for incident investigation, and help other engineers
+          use and maintain what we build.
         </p>
       </header>
 
@@ -37,76 +36,75 @@
         <article class="job">
           <div class="job-header">
             <h3>Site Reliability Engineer · <span class="company">XTB</span></h3>
-            <span class="dates">Apr 2025 – present</span>
+            <span class="dates">Apr 2025 – present<span class="duration" data-start="2025-04">1 yr 6 mos</span></span>
           </div>
           <ul>
-            <li>Built the LLM tooling used in operations: a <b>RAG system</b> over postmortems and internal documentation that assists incident response, a scanner catching sensitive data in logs, and detection of incidents from team chat before they are formally reported.</li>
-            <li>Established <b>wide events</b> as the observability standard and standardized telemetry metadata across <b>almost 1000 microservices</b> running on-prem, in cloud and on bare metal.</li>
-            <li>Consolidated separate monitoring setups into a single metrics, logs and traces platform ingesting <b>terabytes of signals data daily</b>.</li>
-            <li>Own incident management and on-call for trading services: SLOs on business-critical paths, blameless postmortems, automated runbooks driving MTTR down.</li>
-            <li>Rolled out <b>JVM observability</b> across Java services with OpenTelemetry auto-instrumentation, so teams get traces and metrics without touching their code.</li>
-            <li>Extended monitoring to <b>databases</b>: PostgreSQL, Elasticsearch and Kafka consumer lag, covering slow queries and replication health.</li>
-            <li><b>Self-service alerting</b> for developer and QA teams: own alert definitions and thresholds, without a platform-team ticket.</li>
-            <li>Disaster recovery planning and failover drills for trading infrastructure.</li>
-            <li>Interactive per-team report of alerts, incidents, metric coverage and log usage.</li>
+            <li>Worked with the team to bring separate monitoring systems into one platform for metrics, logs and traces, handling <b>terabytes of telemetry daily</b>.</li>
+            <li>Helped define observability standards for <b>800+ microservices</b> in the cloud and on-premises, including bare metal. Introduced <b>wide events</b> and shared metadata conventions with the team, then worked with other teams to put them into practice.</li>
+            <li>Responsible for incident management and on-call for trading services, including SLOs for critical operations, blameless postmortems and runbook automation to shorten recovery time.</li>
+            <li>Added <b>JVM metrics and traces</b> to Java services using OpenTelemetry auto-instrumentation, without application code changes.</li>
+            <li>Added monitoring for PostgreSQL and Elasticsearch, including slow queries and replication health, plus Kafka consumer lag.</li>
+            <li>Built <b>self-service alerting</b> so developers and QA can manage their own alerts and thresholds. Added reports showing each team's alerts, incidents, metric coverage and log usage.</li>
+            <li>Built a <b>RAG tool</b> for searching postmortems and internal docs during incidents, a scanner for sensitive data in logs, and an LLM tool that flags incidents in team chat before they are formally reported.</li>
+            <li>Plan disaster recovery and run failover drills for trading infrastructure.</li>
           </ul>
         </article>
 
         <article class="job">
           <div class="job-header">
             <h3>DevOps Engineer · <span class="company">Oper Credits</span></h3>
-            <span class="dates">Sep 2023 – Apr 2025</span>
+            <span class="dates">Sep 2023 – Apr 2025<span class="duration">1 yr 8 mos</span></span>
           </div>
           <ul>
-            <li>Sole DevOps at a fintech lending startup: Kubernetes, GitOps, Terraform and Ansible provisioning, central monitoring.</li>
-            <li>Production infrastructure on AWS and GCP; led the AWS→GCP migration, cutting infrastructure spend by <b>~40%</b> (FinOps).</li>
-            <li>Full ownership of <b>disaster recovery</b>: designed the process and executed complete production restores several times.</li>
-            <li>Delivered the infrastructure side of <b>ISO 27001</b> certification.</li>
-            <li>Moved releases to git tags and handed routine QA/TEST deploys to the QA team.</li>
-            <li>Chaos engineering experiments validating that the platform survives infrastructure failures.</li>
+            <li>Sole DevOps engineer for <b>mortgage systems with bank integrations across multiple countries</b>. Ran the AWS and GCP infrastructure, including Kubernetes, GitOps deployments, Terraform, Ansible and monitoring.</li>
+            <li>Led the migration from AWS to GCP, reducing infrastructure costs by <b>~40%</b>.</li>
+            <li>Designed the <b>disaster recovery</b> process and tested it by restoring the full production environment several times.</li>
+            <li>Handled the infrastructure work for <b>ISO 27001</b> certification.</li>
+            <li>Switched releases to Git tags and set up deployments so QA could deploy to test environments themselves.</li>
+            <li>Ran chaos experiments to check how the platform handled infrastructure failures.</li>
           </ul>
         </article>
 
         <article class="job">
           <div class="job-header">
             <h3>DevOps / AI Infrastructure Engineer · <span class="company">SentiOne</span></h3>
-            <span class="dates">Nov 2022 – Sep 2023</span>
+            <span class="dates">Nov 2022 – Sep 2023<span class="duration">11 mos</span></span>
           </div>
           <ul>
-            <li>ArgoCD and Terraform for <b>self-service provisioning</b>: customer installs on their own infrastructure went from <b>days to minutes</b>.</li>
-            <li>Self-healing automation for recurring failures, reducing out-of-hours alerts.</li>
-            <li>Hybrid on-prem/cloud Kubernetes (vanilla, OKD, Rancher, k3s) for an <b>AI/NLP platform</b>: GPU nodes, model serving, and the data pipelines behind conversational AI.</li>
+            <li>Automated customer installations on their own infrastructure with ArgoCD and Terraform, bringing setup time from <b>days to minutes</b>.</li>
+            <li>Automated recovery from recurring failures, reducing out-of-hours alerts.</li>
+            <li>Ran Kubernetes in the cloud and on-premises (vanilla, OKD, Rancher, k3s) for an <b>AI/NLP platform</b>, including GPU nodes, model serving and data pipelines.</li>
           </ul>
         </article>
 
         <article class="job">
           <div class="job-header">
             <h3>Junior Cloud Engineer · <span class="company">Allegro Pay</span></h3>
-            <span class="dates">Aug 2022 – Nov 2022</span>
+            <span class="dates">Aug 2022 – Nov 2022<span class="duration">4 mos</span></span>
           </div>
           <ul>
-            <li>Self-service Azure pipelines enabling non-DevOps teams to run routine tasks independently.</li>
-            <li>Cross-region Azure DNS and private-link sync (Azure Pipelines, PowerShell).</li>
+            <li>Built Azure pipelines that let other teams run routine tasks without DevOps help.</li>
+            <li>Automated Azure DNS and Private Link synchronization between regions with Azure Pipelines and PowerShell.</li>
           </ul>
         </article>
 
         <article class="job">
           <div class="job-header">
             <h3>Junior DevOps Engineer · <span class="company">SentiOne</span></h3>
-            <span class="dates">Jul 2021 – Jul 2022</span>
+            <span class="dates">Jul 2020 – Jul 2022<span class="duration">2 yrs 1 mo</span></span>
           </div>
           <ul>
-            <li>Unified monitoring and standardized bare-metal Kubernetes provisioning with Ansible.</li>
-            <li>Multi-TB Elasticsearch cluster and the surrounding Java services; 24/7 on-call across client clouds and data centers.</li>
+            <li>Brought monitoring into one setup and standardized bare-metal Kubernetes provisioning with Ansible.</li>
+            <li>Maintained a multi-TB Elasticsearch cluster and Java services, with 24/7 on-call coverage for customer cloud and data center deployments.</li>
           </ul>
         </article>
 
         <article class="job">
           <div class="job-header">
             <h3>IT/DC Operator · <span class="company">Wirtualna Polska</span></h3>
-            <span class="dates">Feb 2020 – Jun 2020</span>
+            <span class="dates">Feb 2020 – Jun 2020<span class="duration">5 mos</span></span>
           </div>
-          <p class="one-liner">Monitoring and hardware fixes across thousands of racks in WP's data centers.</p>
+          <p class="one-liner">Monitored infrastructure and troubleshot hardware in WP's data centers.</p>
         </article>
       </section>
 
@@ -120,27 +118,47 @@
           <li><b>JVM:</b> OpenTelemetry agent and JMX metrics, GC and heap analysis, thread and connection pools</li>
           <li><b>Databases:</b> PostgreSQL, MySQL, Elasticsearch/OpenSearch, InfluxDB · monitoring and performance troubleshooting</li>
           <li><b>Networking:</b> TCP/IP, DNS, load balancing, VPN</li>
-          <li><b>Programming:</b> Python for most things, solid Bash — and anything else with AI assistance</li>
-          <li><b>AI / LLM:</b> RAG, agents, MCP, LLM tooling running in production · infrastructure for AI/NLP platforms · AI-assisted engineering</li>
+          <li><b>Programming:</b> Python, Bash — operational tooling and infrastructure automation</li>
+          <li><b>AI / LLM:</b> RAG, agents, MCP, production LLM tools, AI/NLP infrastructure</li>
           <li><b>Security:</b> HashiCorp Vault, secrets management, ISO 27001, DevSecOps</li>
           <li><b>Messaging &amp; caching:</b> Kafka, RabbitMQ, Redis</li>
+          <li><b>Technical leadership:</b> mentoring engineers, introducing standards across teams, capacity planning, managing infrastructure budgets</li>
           <li><b>Other:</b> Linux, Nginx, Git, chaos engineering, disaster recovery, FinOps</li>
         </ul>
       </section>
 
       <section class="footer-sections">
         <p><b>Languages:</b> Polish (native) · English (C1) · Italian (basic)</p>
-        <p><b>Opensource contributions:</b> <a href="https://github.com/rsheftel/pandas_market_calendars/pull/436">pandas_market_calendars #436</a></p>
+        <p><b>Open-source contributions:</b> Added a Forex market calendar, tests and documentation to <a href="https://github.com/rsheftel/pandas_market_calendars/pull/436">pandas_market_calendars (merged PR #436)</a>.</p>
       </section>
     </div>
     <script>
+      function updateCurrentDuration() {
+        const duration = document.querySelector(".duration[data-start]");
+        const [startYear, startMonth] = duration.dataset.start.split("-").map(Number);
+        const now = new Date();
+        // Include both the starting month and the current month.
+        const totalMonths = Math.max(0, (now.getFullYear() - startYear) * 12 + now.getMonth() + 2 - startMonth);
+        const years = Math.floor(totalMonths / 12);
+        const months = totalMonths % 12;
+        const parts = [];
+        if (years) parts.push(`${years} ${years === 1 ? "yr" : "yrs"}`);
+        if (months) parts.push(`${months} ${months === 1 ? "mo" : "mos"}`);
+        duration.textContent = parts.join(" ") || "Less than 1 mo";
+      }
+      updateCurrentDuration();
+
       function revealPhone() {
+        const placeholder = document.getElementById("phone");
+        if (!placeholder) return;
         const number = atob("KzQ4IDY2OSA2NDQgNDI3");
         const link = document.createElement("a");
         link.href = "tel:" + number.replaceAll(" ", "");
         link.textContent = number;
-        document.getElementById("phone").replaceWith(link);
+        placeholder.replaceWith(link);
       }
+      window.addEventListener("beforeprint", revealPhone);
+      window.addEventListener("beforeprint", updateCurrentDuration);
     </script>
   </body>
 </html>
