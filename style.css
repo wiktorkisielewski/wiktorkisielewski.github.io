@@ -344,7 +344,7 @@ strong {
 
 /* ---- Print ---- */
 @page {
-  size: A4;
+  size: 210mm 900mm;
   margin: 13mm 15mm 13mm 0;
 }
 
